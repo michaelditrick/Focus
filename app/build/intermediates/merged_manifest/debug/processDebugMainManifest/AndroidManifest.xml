@@ -28,6 +28,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.Focus" >
         <activity
+            android:name="com.example.focus.RoutinesActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.focus.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.focus.HomeActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.focus.HomePageActivity"
             android:exported="false" />
         <activity

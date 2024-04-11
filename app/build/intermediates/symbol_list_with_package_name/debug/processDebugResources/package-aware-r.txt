@@ -3121,6 +3121,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id appListLayout
 id arc
 id asConfigured
 id async
@@ -3143,6 +3144,7 @@ id buttonCreateAccount
 id buttonPanel
 id buttonSignIn
 id cache_measures
+id calendarView
 id callMeasure
 id cancel_button
 id carryVelocity
@@ -3271,6 +3273,7 @@ id immediateStop
 id included
 id indeterminate
 id info
+id infoLayout
 id invisible
 id inward
 id italic
@@ -3348,6 +3351,10 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id navBar
+id navHome
+id navProfile
+id navRoutines
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3366,6 +3373,7 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id notificationsTotal
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -3406,6 +3414,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id refreshButton
 id report_drawn
 id reverseSawtooth
 id right
@@ -3419,6 +3428,7 @@ id save_overlay_view
 id sawtooth
 id scale
 id screen
+id screenTimeTotal
 id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -3537,6 +3547,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id welcomeText
 id west
 id withText
 id with_icon
@@ -3660,9 +3671,11 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_home_page
+layout activity_home
 layout activity_login
 layout activity_main
+layout activity_profile
+layout activity_routines
 layout activity_signup
 layout custom_dialog
 layout design_bottom_navigation_item
