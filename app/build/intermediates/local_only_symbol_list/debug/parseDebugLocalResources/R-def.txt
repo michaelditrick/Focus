@@ -9,11 +9,10 @@ drawable ic_launcher_foreground
 drawable profile
 drawable refresh
 drawable routine
+drawable settings
+drawable signout
 id appListLayout
 id bottom_navigation
-id btnAccountInfo
-id btnSettings
-id btnSignOut
 id buttonCreateAccount
 id buttonSignIn
 id calendarView
@@ -23,6 +22,8 @@ id editTextGender
 id editTextName
 id editTextPassword
 id editTextUsername
+id imgSettings
+id imgSignOut
 id infoLayout
 id main
 id navHome
@@ -33,6 +34,11 @@ id refreshButton
 id screenTimeTotal
 id signInButton
 id signInUserName
+id txtAccountInfoLabel
+id txtAge
+id txtGender
+id txtName
+id txtUsername
 id welcomeText
 layout activity_account_info
 layout activity_home

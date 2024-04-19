@@ -3043,6 +3043,8 @@ drawable notify_panel_notification_icon_bg
 drawable profile
 drawable refresh
 drawable routine
+drawable settings
+drawable signout
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3146,9 +3148,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id btnAccountInfo
-id btnSettings
-id btnSignOut
 id buttonCreateAccount
 id buttonPanel
 id buttonSignIn
@@ -3278,6 +3277,8 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imgSettings
+id imgSignOut
 id immediateStop
 id included
 id indeterminate
@@ -3541,6 +3542,11 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtAccountInfoLabel
+id txtAge
+id txtGender
+id txtName
+id txtUsername
 id unchecked
 id uniform
 id unlabeled

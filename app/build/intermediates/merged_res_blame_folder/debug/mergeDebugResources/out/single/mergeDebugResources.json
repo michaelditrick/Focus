@@ -8,6 +8,10 @@
         "source": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-main-33:/mipmap-anydpi/ic_launcher.xml"
     },
     {
+        "merged": "com.example.focus.app-debug-31:/drawable_signout.png.flat",
+        "source": "com.example.focus.app-main-33:/drawable/signout.png"
+    },
+    {
         "merged": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-debug-31:/layout_activity_settings.xml.flat",
         "source": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-main-33:/layout/activity_settings.xml"
     },
@@ -20,10 +24,6 @@
         "source": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-main-33:/layout/activity_profile.xml"
     },
     {
-        "merged": "com.example.focus.app-debug-31:/drawable_focus.png.flat",
-        "source": "com.example.focus.app-main-33:/drawable/focus.png"
-    },
-    {
         "merged": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-debug-31:/mipmap-mdpi_ic_launcher.webp.flat",
         "source": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-main-33:/mipmap-mdpi/ic_launcher.webp"
     },
@@ -34,6 +34,10 @@
     {
         "merged": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-debug-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-debug-31:/drawable_focus.png.flat",
+        "source": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-main-33:/drawable/focus.png"
     },
     {
         "merged": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-debug-31:/drawable_home.png.flat",
@@ -58,10 +62,6 @@
     {
         "merged": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.focus.app-debug-31:/layout_activity_main.xml.flat",
-        "source": "com.example.focus.app-main-33:/layout/activity_main.xml"
     },
     {
         "merged": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-debug-31:/drawable_ic_launcher_background.xml.flat",
@@ -118,6 +118,14 @@
     {
         "merged": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-debug-31:/layout_activity_main.xml.flat",
         "source": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.focus.app-debug-31:/drawable_settings.png.flat",
+        "source": "com.example.focus.app-main-33:/drawable/settings.png"
+    },
+    {
+        "merged": "com.example.focus.app-debug-31:/layout_activity_profile.xml.flat",
+        "source": "com.example.focus.app-main-33:/layout/activity_profile.xml"
     },
     {
         "merged": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
