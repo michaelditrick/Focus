@@ -2952,6 +2952,8 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable focus
+drawable home
 drawable ic_arrow_back_black_24
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
@@ -3038,6 +3040,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable profile
+drawable refresh
+drawable routine
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3136,10 +3141,14 @@ id beginning
 id bestChoice
 id blocking
 id bottom
+id bottom_navigation
 id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnAccountInfo
+id btnSettings
+id btnSignOut
 id buttonCreateAccount
 id buttonPanel
 id buttonSignIn
@@ -3351,7 +3360,6 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
-id navBar
 id navHome
 id navProfile
 id navRoutines
@@ -3671,11 +3679,13 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_account_info
 layout activity_home
 layout activity_login
 layout activity_main
 layout activity_profile
 layout activity_routines
+layout activity_settings
 layout activity_signup
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3754,6 +3764,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu bottom_navigation_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description

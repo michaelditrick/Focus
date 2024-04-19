@@ -9,6 +9,8 @@ import android.widget.CalendarView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 public class HomeActivity extends AppCompatActivity {
 
     private TextView welcomeText;
@@ -17,12 +19,16 @@ public class HomeActivity extends AppCompatActivity {
     private View histogramView;
     private TextView screenTimeText;
     private TextView notificationText;
+    private BottomNavigationView bottomNavigationView;
+
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
 
         // Initialize views
         welcomeText = findViewById(R.id.welcomeText);
@@ -47,35 +53,25 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         // Set up navigation buttons
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+            int id = item.getItemId();
 
-        // Set up onClickListener for Home button
-        Button navHome = findViewById(R.id.navHome);
-        navHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
-                startActivity(intent);
+            if (id == R.id.navHome) {
+
+                return true;
+            } else if (id == R.id.navRoutines) {
+                startActivity(new Intent(this, RoutinesActivity.class));
+                return true;
+            } else if (id == R.id.navProfile) {
+                startActivity(new Intent(this, ProfileActivity.class));
+                return true;
             }
+
+            return false;
         });
 
-        Button navRoutines = findViewById(R.id.navRoutines);
-        navRoutines.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, RoutinesActivity.class);
-                startActivity(intent);
-            }
-        });
 
-        // Set up onClickListener for Profile button
-        Button navProfile = findViewById(R.id.navProfile);
-        navProfile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
-                startActivity(intent);
-            }
-        });
 
         // TODO: Implement data loading and update methods
     }
