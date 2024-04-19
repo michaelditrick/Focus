@@ -2,9 +2,18 @@ R_DEF: Internal format may change without notice
 local
 color black
 color white
+drawable focus
+drawable home
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable profile
+drawable refresh
+drawable routine
 id appListLayout
+id bottom_navigation
+id btnAccountInfo
+id btnSettings
+id btnSignOut
 id buttonCreateAccount
 id buttonSignIn
 id calendarView
@@ -16,7 +25,6 @@ id editTextPassword
 id editTextUsername
 id infoLayout
 id main
-id navBar
 id navHome
 id navProfile
 id navRoutines
@@ -26,12 +34,15 @@ id screenTimeTotal
 id signInButton
 id signInUserName
 id welcomeText
+layout activity_account_info
 layout activity_home
 layout activity_login
 layout activity_main
 layout activity_profile
 layout activity_routines
+layout activity_settings
 layout activity_signup
+menu bottom_navigation_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
