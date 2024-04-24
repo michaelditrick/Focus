@@ -11,7 +11,10 @@ drawable refresh
 drawable routine
 drawable settings
 drawable signout
+id appIcon
 id appListLayout
+id appName
+id appTime
 id bottom_navigation
 id buttonCreateAccount
 id buttonSignIn
@@ -29,11 +32,11 @@ id main
 id navHome
 id navProfile
 id navRoutines
-id notificationsTotal
 id refreshButton
-id screenTimeTotal
+id rvProgram
 id signInButton
 id signInUserName
+id totalUsageTime
 id txtAccountInfoLabel
 id txtAge
 id txtGender
@@ -48,6 +51,8 @@ layout activity_profile
 layout activity_routines
 layout activity_settings
 layout activity_signup
+layout app_usage
+layout calender_view
 menu bottom_navigation_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
