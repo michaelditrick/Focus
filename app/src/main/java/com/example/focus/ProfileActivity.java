@@ -11,7 +11,7 @@ import java.util.concurrent.Executors;
 public class ProfileActivity extends AppCompatActivity {
 
     private TextView txtName, txtAge, txtUsername, txtGender;
-    private ExecutorService databaseExecutor = Executors.newSingleThreadExecutor();
+    private final ExecutorService databaseExecutor = Executors.newSingleThreadExecutor();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

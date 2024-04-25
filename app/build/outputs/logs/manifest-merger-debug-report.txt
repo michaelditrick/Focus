@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:2:1-56:12
+ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:2:1-59:12
+INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:2:1-59:12
+INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:2:1-59:12
+INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:2:1-59:12
 MERGED from [com.google.android.material:material:1.10.0] /Users/ditrick/.gradle/caches/transforms-3/a6b7991a33d313e218cce7e7dd40e192/transformed/material-1.10.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/ditrick/.gradle/caches/transforms-3/4427a87fc164e9e78112bccac44a0f75/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/ditrick/.gradle/caches/transforms-3/e4452e8a6e9eceaf13347753b22a3337/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
@@ -56,8 +56,8 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/ditrick/.
 	xmlns:android
 		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:5:5-54:19
-INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:5:5-54:19
+ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:5:5-57:19
+INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:5:5-57:19
 MERGED from [com.google.android.material:material:1.10.0] /Users/ditrick/.gradle/caches/transforms-3/a6b7991a33d313e218cce7e7dd40e192/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] /Users/ditrick/.gradle/caches/transforms-3/a6b7991a33d313e218cce7e7dd40e192/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/ditrick/.gradle/caches/transforms-3/4427a87fc164e9e78112bccac44a0f75/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -96,82 +96,88 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ditr
 		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:13:9-43
 	android:dataExtractionRules
 		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:7:9-65
-activity#com.example.focus.AccountInfoActivity
+activity#com.example.focus.scheduleActivity
 ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:15:9-17:40
 	android:exported
 		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:16:13-48
-activity#com.example.focus.SettingsActivity
+		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:16:13-45
+activity#com.example.focus.AccountInfoActivity
 ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:18:9-20:40
 	android:exported
 		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:19:13-45
-activity#com.example.focus.RoutinesActivity
+		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:19:13-48
+activity#com.example.focus.SettingsActivity
 ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:21:9-23:40
 	android:exported
 		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:23:13-37
 	android:name
 		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:22:13-45
-activity#com.example.focus.ProfileActivity
+activity#com.example.focus.RoutinesActivity
 ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:24:9-26:40
 	android:exported
 		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:25:13-44
-activity#com.example.focus.HomeActivity
+		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:25:13-45
+activity#com.example.focus.ProfileActivity
 ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:27:9-29:40
 	android:exported
 		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:28:13-41
-activity#com.example.focus.HomePageActivity
+		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:28:13-44
+activity#com.example.focus.HomeActivity
 ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:30:9-32:40
 	android:exported
 		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:31:13-45
-activity#com.example.focus.SignupActivity
+		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:31:13-41
+activity#com.example.focus.HomePageActivity
 ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:33:9-35:40
 	android:exported
 		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:34:13-43
-activity#com.example.focus.LoginActivity
+		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:34:13-45
+activity#com.example.focus.SignupActivity
 ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:36:9-38:40
 	android:exported
 		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:37:13-42
-activity#com.example.focus.SignIn
+		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:37:13-43
+activity#com.example.focus.LoginActivity
 ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:39:9-41:40
 	android:exported
 		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:41:13-37
 	android:name
-		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:40:13-35
-activity#com.example.focus.signup
+		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:40:13-42
+activity#com.example.focus.SignIn
 ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:42:9-44:40
 	android:exported
 		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:44:13-37
 	android:name
 		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:43:13-35
-activity#com.example.focus.MainActivity
-ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:45:9-53:20
+activity#com.example.focus.signup
+ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:45:9-47:40
 	android:exported
-		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:47:13-36
+		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:46:13-41
+		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:46:13-35
+activity#com.example.focus.MainActivity
+ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:48:9-56:20
+	android:exported
+		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:50:13-36
+	android:name
+		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:49:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:48:13-52:29
+ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:51:13-55:29
 action#android.intent.action.MAIN
-ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:49:17-69
+ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:52:17-69
 	android:name
-		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:49:25-66
+		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:52:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:51:17-77
+ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:54:17-77
 	android:name
-		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:51:27-74
+		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:54:27-74
 uses-sdk
 INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml

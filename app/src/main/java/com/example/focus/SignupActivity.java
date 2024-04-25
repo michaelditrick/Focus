@@ -90,7 +90,6 @@ public class SignupActivity extends AppCompatActivity {
 
                 if (false) {
                     Toast.makeText(SignupActivity.this, "The selected username is xxxx taken. Try another one!", Toast.LENGTH_SHORT).show();
-                    return;
                 }
                 else {
 
