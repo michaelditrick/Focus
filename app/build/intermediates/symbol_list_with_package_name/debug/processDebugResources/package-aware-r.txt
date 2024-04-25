@@ -3043,6 +3043,8 @@ drawable notify_panel_notification_icon_bg
 drawable profile
 drawable refresh
 drawable routine
+drawable settings
+drawable signout
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3126,7 +3128,10 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id appIcon
 id appListLayout
+id appName
+id appTime
 id arc
 id asConfigured
 id async
@@ -3146,9 +3151,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id btnAccountInfo
-id btnSettings
-id btnSignOut
 id buttonCreateAccount
 id buttonPanel
 id buttonSignIn
@@ -3278,6 +3280,8 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imgSettings
+id imgSignOut
 id immediateStop
 id included
 id indeterminate
@@ -3381,7 +3385,6 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
-id notificationsTotal
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -3431,12 +3434,12 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvProgram
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
 id screen
-id screenTimeTotal
 id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -3532,6 +3535,7 @@ id title_template
 id toggle
 id top
 id topPanel
+id totalUsageTime
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -3541,6 +3545,11 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtAccountInfoLabel
+id txtAge
+id txtGender
+id txtName
+id txtUsername
 id unchecked
 id uniform
 id unlabeled
@@ -3687,6 +3696,8 @@ layout activity_profile
 layout activity_routines
 layout activity_settings
 layout activity_signup
+layout app_usage
+layout calender_view
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
