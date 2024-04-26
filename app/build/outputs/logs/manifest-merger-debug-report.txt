@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:2:1-101:12
-INJECTED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:2:1-101:12
-INJECTED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:2:1-101:12
-INJECTED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:2:1-101:12
+ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:2:1-104:12
+INJECTED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:2:1-104:12
+INJECTED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:2:1-104:12
+INJECTED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:2:1-104:12
 MERGED from [com.google.android.material:material:1.10.0] /Users/thandotsela/.gradle/caches/transforms-3/a6b7991a33d313e218cce7e7dd40e192/transformed/material-1.10.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/thandotsela/.gradle/caches/transforms-3/4427a87fc164e9e78112bccac44a0f75/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/thandotsela/.gradle/caches/transforms-3/e4452e8a6e9eceaf13347753b22a3337/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
@@ -92,8 +92,8 @@ ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Progr
 	android:name
 		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:16:21-62
 application
-ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:50:5-99:19
-INJECTED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:50:5-99:19
+ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:50:5-102:19
+INJECTED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:50:5-102:19
 MERGED from [com.google.android.material:material:1.10.0] /Users/thandotsela/.gradle/caches/transforms-3/a6b7991a33d313e218cce7e7dd40e192/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] /Users/thandotsela/.gradle/caches/transforms-3/a6b7991a33d313e218cce7e7dd40e192/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/thandotsela/.gradle/caches/transforms-3/4427a87fc164e9e78112bccac44a0f75/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -132,78 +132,84 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/than
 		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:58:9-43
 	android:dataExtractionRules
 		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:52:9-65
-activity#com.example.focus.AccountInfoActivity
+activity#com.example.focus.scheduleActivity
 ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:60:9-62:40
 	android:exported
 		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:62:13-37
 	android:name
-		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:61:13-48
-activity#com.example.focus.SettingsActivity
+		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:61:13-45
+activity#com.example.focus.AccountInfoActivity
 ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:63:9-65:40
 	android:exported
 		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:65:13-37
 	android:name
-		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:64:13-45
-activity#com.example.focus.RoutinesActivity
+		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:64:13-48
+activity#com.example.focus.SettingsActivity
 ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:66:9-68:40
 	android:exported
 		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:68:13-37
 	android:name
 		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:67:13-45
-activity#com.example.focus.ProfileActivity
+activity#com.example.focus.RoutinesActivity
 ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:69:9-71:40
 	android:exported
 		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:71:13-37
 	android:name
-		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:70:13-44
-activity#com.example.focus.HomeActivity
+		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:70:13-45
+activity#com.example.focus.ProfileActivity
 ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:72:9-74:40
 	android:exported
 		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:74:13-37
 	android:name
-		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:73:13-41
-activity#com.example.focus.HomePageActivity
+		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:73:13-44
+activity#com.example.focus.HomeActivity
 ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:75:9-77:40
 	android:exported
 		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:77:13-37
 	android:name
-		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:76:13-45
-activity#com.example.focus.SignupActivity
+		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:76:13-41
+activity#com.example.focus.HomePageActivity
 ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:78:9-80:40
 	android:exported
 		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:80:13-37
 	android:name
-		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:79:13-43
-activity#com.example.focus.LoginActivity
+		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:79:13-45
+activity#com.example.focus.SignupActivity
 ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:81:9-83:40
 	android:exported
 		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:83:13-37
 	android:name
-		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:82:13-42
-activity#com.example.focus.SignIn
+		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:82:13-43
+activity#com.example.focus.LoginActivity
 ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:84:9-86:40
 	android:exported
 		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:86:13-37
 	android:name
-		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:85:13-35
-activity#com.example.focus.signup
+		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:85:13-42
+activity#com.example.focus.SignIn
 ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:87:9-89:40
 	android:exported
 		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:89:13-37
 	android:name
 		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:88:13-35
-activity#com.example.focus.MainActivity
-ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:90:9-98:20
+activity#com.example.focus.signup
+ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:90:9-92:40
 	android:exported
-		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:92:13-36
+		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:92:13-37
 	android:name
-		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:91:13-41
+		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:91:13-35
+activity#com.example.focus.MainActivity
+ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:93:9-101:20
+	android:exported
+		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:95:13-36
+	android:name
+		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:94:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:93:13-97:29
+ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:96:13-100:29
 category#android.intent.category.LAUNCHER
-ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:96:17-77
+ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:99:17-77
 	android:name
-		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:96:27-74
+		ADDED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:99:27-74
 uses-sdk
 INJECTED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml

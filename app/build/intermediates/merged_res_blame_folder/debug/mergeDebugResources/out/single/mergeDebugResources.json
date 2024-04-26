@@ -16,12 +16,12 @@
         "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/mipmap-anydpi/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/layout_app_usage.xml.flat",
-        "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/layout/app_usage.xml"
-    },
-    {
         "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/menu_bottom_navigation_menu.xml.flat",
         "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/menu/bottom_navigation_menu.xml"
+    },
+    {
+        "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/layout_app_usage.xml.flat",
+        "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/layout/app_usage.xml"
     },
     {
         "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/layout_activity_login.xml.flat",
@@ -52,8 +52,8 @@
         "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.focus.app-debug-31:/layout_activity_home.xml.flat",
-        "source": "com.example.focus.app-main-33:/layout/activity_home.xml"
+        "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/layout_activity_schedule.xml.flat",
+        "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/layout/activity_schedule.xml"
     },
     {
         "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/drawable_ic_launcher_background.xml.flat",
@@ -64,20 +64,28 @@
         "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/layout_activity_profile.xml.flat",
-        "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/layout/activity_profile.xml"
+        "merged": "com.example.focus.app-debug-31:/layout_app_usage.xml.flat",
+        "source": "com.example.focus.app-main-33:/layout/app_usage.xml"
     },
     {
-        "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/layout_calender_view.xml.flat",
-        "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/layout/calender_view.xml"
+        "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/layout_activity_profile.xml.flat",
+        "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/layout/activity_profile.xml"
     },
     {
         "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/drawable_focus.png.flat",
         "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/drawable/focus.png"
     },
     {
+        "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/layout_calender_view.xml.flat",
+        "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/layout/calender_view.xml"
+    },
+    {
         "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/xml_data_extraction_rules.xml.flat",
         "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/layout_item_schedule.xml.flat",
+        "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/layout/item_schedule.xml"
     },
     {
         "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -104,12 +112,12 @@
         "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/drawable/home.png"
     },
     {
-        "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/layout_activity_home.xml.flat",
-        "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/layout/activity_home.xml"
-    },
-    {
         "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/layout_activity_account_info.xml.flat",
         "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/layout/activity_account_info.xml"
+    },
+    {
+        "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/layout_activity_home.xml.flat",
+        "source": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-main-33:/layout/activity_home.xml"
     },
     {
         "merged": "/Users/thandotsela/.gradle/daemon/8.4/com.example.focus.app-debug-31:/layout_activity_signup.xml.flat",

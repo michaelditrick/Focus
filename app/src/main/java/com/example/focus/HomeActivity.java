@@ -80,6 +80,14 @@ public class HomeActivity extends AppCompatActivity {
 //        CalendarAdapter adapter = new CalendarAdapter(this);
 //        spinner.setAdapter(adapter);
 
+        //Declare the database to check username and password
+        DBClass db=new DBClass(getApplicationContext(), "Database0");
+        //String name = db.getName(username);
+
+        //use the username above in the welcome message
+        //String welcomeMessage = "Welcome, " + name + "!";
+        //textViewWelcome.setText(welcomeMessage);
+
         userCalender = Calendar.getInstance();
          //Set up the calendar view
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
@@ -118,7 +126,6 @@ public class HomeActivity extends AppCompatActivity {
                     throw new RuntimeException(e);
                 }
             }
-           //}
         });
 
         // Set up the refresh button
@@ -278,7 +285,7 @@ public class HomeActivity extends AppCompatActivity {
         appsUsageTime = myPair.get(2);
 
         // Create instance of program adapter. Pass context and all other elements to the constructor
-        programAdapter = new ProgramAdapter(this, appsUsageTime, appsNames, appsIconList);
+        programAdapter = new ProgramAdapter(this, appsUsageTime, appsIconList);
 
         // Attach adapter with the recyclerView
         recyclerView.setAdapter(programAdapter);
