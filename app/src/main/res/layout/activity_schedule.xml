@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set a schedule"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtStartTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="8:00 AM"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/txtEndTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5:00 PM"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:focusable="true"/>
+    </LinearLayout>
+
+    <!-- ToggleButtons for days of the week -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <ToggleButton
+            android:id="@+id/toggleSunday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="S"
+            android:textOff="S"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <ToggleButton
+            android:id="@+id/toggleMonday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="M"
+            android:textOff="M"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <ToggleButton
+            android:id="@+id/toggleTuesday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="T"
+            android:textOff="T"
+            android:background="?android:attr/selectableItemBackground" />
+        <ToggleButton
+            android:id="@+id/toggleWednesday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="W"
+            android:textOff="W"
+            android:background="?android:attr/selectableItemBackground" />
+        <ToggleButton
+            android:id="@+id/toggleThursday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="T"
+            android:textOff="T"
+            android:background="?android:attr/selectableItemBackground" />
+        <ToggleButton
+            android:id="@+id/toggleFriday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="F"
+            android:textOff="F"
+            android:background="?android:attr/selectableItemBackground" />
+        <ToggleButton
+            android:id="@+id/toggleSaturday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="S"
+            android:textOff="S"
+            android:background="?android:attr/selectableItemBackground" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSetSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set"/>
+</LinearLayout>

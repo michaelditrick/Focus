@@ -24,53 +24,72 @@
         android:layout_marginEnd="16dp"
          />
 
-    <CalendarView
-        android:id="@+id/calendarView"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/welcomeText"
-        android:layout_marginTop="16dp" />
+        android:layout_below="@id/welcomeText">
 
     <LinearLayout
         android:id="@+id/infoLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@id/calendarView">
+        android:orientation="vertical"
+        android:paddingBottom="70dp"
+        android:layout_below="@id/welcomeText"
+        android:layout_above="@id/bottom_navigation">
 
-        <TextView
-            android:id="@+id/screenTimeTotal"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Screen time\n3hr 4min"
-            android:gravity="center"
-            android:padding="16dp" />
+<!--        <Spinner-->
+<!--            android:id="@+id/spinner"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/welcomeText"/>-->
 
-        <TextView
-            android:id="@+id/notificationsTotal"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Total notifications\n42"
-            android:gravity="center"
-            android:padding="16dp" />
-    </LinearLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/infoLayout">
-
-        <LinearLayout
-            android:id="@+id/appListLayout"
+        <CalendarView
+            android:id="@+id/calendarView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:layout_below="@id/welcomeText"
+            android:layout_marginTop="16dp" />
 
-        </LinearLayout>
-    </ScrollView>
+        <!--            android:layout_weight="1"-->
+
+        <TextView
+            android:id="@+id/totalUsageTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Total Screen Time:"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+            <LinearLayout
+                android:id="@+id/appListLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:padding="16dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvProgram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+<!--        <TextView-->
+<!--            android:id="@+id/notificationsTotal"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Total notifications\n42"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="16dp" />-->
+
+    </LinearLayout>
+</ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

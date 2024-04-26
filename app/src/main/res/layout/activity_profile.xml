@@ -1,27 +1,70 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="16dp">
 
-    <Button
-        android:id="@+id/btnAccountInfo"
-        android:layout_width="match_parent"
+    <!-- Settings -->
+    <ImageView
+        android:id="@+id/imgSettings"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/settings"
+        android:padding="8dp"/>
+
+    <!-- Sign Out-->
+    <ImageView
+        android:id="@+id/imgSignOut"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/signout"
+        android:padding="8dp"/>
+
+    <!-- Account Information -->
+    <TextView
+        android:id="@+id/txtAccountInfoLabel"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/imgSettings"
+        android:layout_marginTop="32dp"
         android:text="Account Information"
-        android:layout_marginBottom="16dp" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-    <Button
-        android:id="@+id/btnSettings"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Settings"
-        android:layout_marginBottom="16dp" />
 
-    <Button
-        android:id="@+id/btnSignOut"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Out"
-        android:layout_marginBottom="16dp" />
-</LinearLayout>
+        android:layout_below="@id/txtAccountInfoLabel"
+        android:text="Name: John Doe" />
+
+
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:text="Age: 30" />
+
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAge"
+        android:text="Username: johndoe123" />
+
+
+    <TextView
+        android:id="@+id/txtGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtUsername"
+        android:text="Gender: Male" />
+
+
+
+</RelativeLayout>

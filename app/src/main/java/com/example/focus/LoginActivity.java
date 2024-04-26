@@ -40,8 +40,10 @@ public class LoginActivity extends AppCompatActivity {
                 TODO:Thando
                 no changes needed if database is implemented
 
+                 */
+
                 //Declare the database to check username and password
-                //DBClass db=new DBClass(getApplicationContext(), "Database0");
+                DBClass db=new DBClass(getApplicationContext(), "Database0");
 
                 //hash it before comparing
                 String passwordHash = PasswordUtils.hashPassword(password);
@@ -49,22 +51,17 @@ public class LoginActivity extends AppCompatActivity {
                 // Compare with global variables
                 if(db.verifyPassword(username,passwordHash)) {
                     // Credentials match, navigate to Home Page Activity
-                    Intent homeIntent = new Intent(LoginActivity.this, HomePageActivity.class);
+                    Intent homeIntent = new Intent(LoginActivity.this, HomeActivity.class);
                     homeIntent.putExtra("thisUserName", username);
                     startActivity(homeIntent);
                 } else {
                     // Credentials don't match, show error
                     Toast.makeText(LoginActivity.this, "Invalid username or password.", Toast.LENGTH_SHORT).show();
                 }
-                */
 
                 Intent homeIntent = new Intent(LoginActivity.this, HomeActivity.class);
                 //homeIntent.putExtra("thisUserName", username);
                 startActivity(homeIntent);
-
-
             }});
-
-
     }
 }
