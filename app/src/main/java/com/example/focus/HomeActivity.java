@@ -51,6 +51,7 @@ public class HomeActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
 
     //Thando's variables
+    private TextView txtName;
     private Calendar cal;
     private Calendar userCalender;
     private List<UsageStats> stats;
@@ -80,9 +81,15 @@ public class HomeActivity extends AppCompatActivity {
 //        CalendarAdapter adapter = new CalendarAdapter(this);
 //        spinner.setAdapter(adapter);
 
+        //Get intent that started this activity
+        Intent intent = getIntent();
+        String username = intent.getStringExtra("thisUserName"); //Retrive the username
+
         //Declare the database to check username and password
         DBClass db=new DBClass(getApplicationContext(), "Database0");
-        //String name = db.getName(username);
+        String name = db.getName(username);
+
+        welcomeText.setText("Welcome, "+ name);
 
         //use the username above in the welcome message
         //String welcomeMessage = "Welcome, " + name + "!";
@@ -155,7 +162,10 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(this, RoutinesActivity.class));
                 return true;
             } else if (id == R.id.navProfile) {
-                startActivity(new Intent(this, ProfileActivity.class));
+                Intent profileIntent = new Intent(HomeActivity.this, ProfileActivity.class);
+                profileIntent.putExtra("thisUserName", username);
+                startActivity(profileIntent);
+                //startActivity(new Intent(this, ProfileActivity.class));
                 return true;
             }
 
@@ -179,15 +189,15 @@ public class HomeActivity extends AppCompatActivity {
         midnight = cal.getTimeInMillis(); // this is midnight (start of the day)
 
         // Request permission to access usage stats if not granted already
-        if (!hasUsageAccessPermission()) {
-        requestUsageAccessPermission();
-        } else {
-            try {
-                displayTotalUsageTime(midnight, currentTime);
-            } catch (PackageManager.NameNotFoundException e) {
-                throw new RuntimeException(e);
-            }
-        }
+//        if (!hasUsageAccessPermission()) {
+//        requestUsageAccessPermission();
+//        } else {
+//            try {
+//                displayTotalUsageTime(midnight, currentTime);
+//            } catch (PackageManager.NameNotFoundException e) {
+//                throw new RuntimeException(e);
+//            }
+//        }
 
         // Display Apps data and total usage time data
         try {

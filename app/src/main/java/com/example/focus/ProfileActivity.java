@@ -25,6 +25,21 @@ public class ProfileActivity extends AppCompatActivity {
         ImageView imgSettings = findViewById(R.id.imgSettings);
         ImageView imgSignOut = findViewById(R.id.imgSignOut);
 
+        //Get intent that started this activity
+        Intent intent1 = getIntent();
+        String username = intent1.getStringExtra("thisUserName"); //Retrive the username
+
+        //Declare the database to check username and password
+        DBClass db=new DBClass(getApplicationContext(), "Database0");
+        String name = db.getName(username);
+        Integer age = db.getAge(username);
+        String gender = db.getGender(username);
+
+        txtName.setText("Name: "+ name);
+        txtAge.setText("Age: "+ age);
+        txtUsername.setText("Userame: "+ username);
+        txtGender.setText("Gender: "+ gender);
+
         // Set up the settings icon click listener
         imgSettings.setOnClickListener(view -> startActivity(new Intent(this, SettingsActivity.class)));
 

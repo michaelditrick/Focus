@@ -52,21 +52,16 @@ public class LoginActivity extends AppCompatActivity {
                 if(db.verifyPassword(username,passwordHash)) {
                     // Credentials match, navigate to Home Page Activity
                     Intent homeIntent = new Intent(LoginActivity.this, HomeActivity.class);
-                    //homeIntent.putExtra("thisUserName", username);
+                    homeIntent.putExtra("thisUserName", username);
                     startActivity(homeIntent);
                 } else {
                     // Credentials don't match, show error
                     Toast.makeText(LoginActivity.this, "Invalid username or password.", Toast.LENGTH_SHORT).show();
                 }
 
-
                 Intent homeIntent = new Intent(LoginActivity.this, HomeActivity.class);
                 //homeIntent.putExtra("thisUserName", username);
                 startActivity(homeIntent);
-
-
             }});
-
-
     }
 }
