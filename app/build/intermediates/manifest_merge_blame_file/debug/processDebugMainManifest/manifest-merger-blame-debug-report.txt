@@ -8,189 +8,253 @@
 8        android:minSdkVersion="27"
 9        android:targetSdkVersion="34" />
 10
-11    <permission
-11-->[androidx.core:core:1.9.0] /Users/ditrick/.gradle/caches/transforms-3/1c981cacaf211a05fae97b7272486038/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
-12        android:name="com.example.focus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.9.0] /Users/ditrick/.gradle/caches/transforms-3/1c981cacaf211a05fae97b7272486038/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
-13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.9.0] /Users/ditrick/.gradle/caches/transforms-3/1c981cacaf211a05fae97b7272486038/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+11    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+11-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:5:5-78
+11-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:5:22-75
+12
+13    <queries>
+13-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:7:5-48:15
 14
-15    <uses-permission android:name="com.example.focus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.9.0] /Users/ditrick/.gradle/caches/transforms-3/1c981cacaf211a05fae97b7272486038/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.9.0] /Users/ditrick/.gradle/caches/transforms-3/1c981cacaf211a05fae97b7272486038/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
-16
-17    <application
-17-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:5:5-57:19
-18        android:allowBackup="true"
-18-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:6:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.9.0] /Users/ditrick/.gradle/caches/transforms-3/1c981cacaf211a05fae97b7272486038/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
-20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:7:9-65
-21        android:debuggable="true"
-22        android:extractNativeLibs="false"
-23        android:fullBackupContent="@xml/backup_rules"
-23-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:8:9-54
-24        android:icon="@mipmap/ic_launcher"
-24-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:9:9-43
-25        android:label="@string/app_name"
-25-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:10:9-41
-26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:11:9-54
-27        android:supportsRtl="true"
-27-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:12:9-35
-28        android:testOnly="true"
-29        android:theme="@style/Theme.Focus" >
-29-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:13:9-43
-30        <activity
-30-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:15:9-17:40
-31            android:name="com.example.focus.scheduleActivity"
-31-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:16:13-45
-32            android:exported="false" />
-32-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:17:13-37
-33        <activity
-33-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:18:9-20:40
-34            android:name="com.example.focus.AccountInfoActivity"
-34-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:19:13-48
-35            android:exported="false" />
-35-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:20:13-37
-36        <activity
-36-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:21:9-23:40
-37            android:name="com.example.focus.SettingsActivity"
-37-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:22:13-45
-38            android:exported="false" />
-38-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:23:13-37
-39        <activity
-39-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:24:9-26:40
-40            android:name="com.example.focus.RoutinesActivity"
-40-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:25:13-45
-41            android:exported="false" />
-41-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:26:13-37
-42        <activity
-42-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:27:9-29:40
-43            android:name="com.example.focus.ProfileActivity"
-43-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:28:13-44
-44            android:exported="false" />
-44-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:29:13-37
-45        <activity
-45-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:30:9-32:40
-46            android:name="com.example.focus.HomeActivity"
-46-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:31:13-41
-47            android:exported="false" />
-47-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:32:13-37
-48        <activity
-48-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:33:9-35:40
-49            android:name="com.example.focus.HomePageActivity"
-49-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:34:13-45
-50            android:exported="false" />
-50-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:35:13-37
-51        <activity
-51-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:36:9-38:40
-52            android:name="com.example.focus.SignupActivity"
-52-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:37:13-43
-53            android:exported="false" />
-53-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:38:13-37
-54        <activity
-54-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:39:9-41:40
-55            android:name="com.example.focus.LoginActivity"
-55-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:40:13-42
-56            android:exported="false" />
-56-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:41:13-37
-57        <activity
-57-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:42:9-44:40
-58            android:name="com.example.focus.SignIn"
-58-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:43:13-35
-59            android:exported="false" />
-59-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:44:13-37
-60        <activity
-60-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:45:9-47:40
-61            android:name="com.example.focus.signup"
-61-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:46:13-35
-62            android:exported="false" />
-62-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:47:13-37
-63        <activity
-63-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:48:9-56:20
-64            android:name="com.example.focus.MainActivity"
-64-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:49:13-41
-65            android:exported="true" >
-65-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:50:13-36
-66            <intent-filter>
-66-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:51:13-55:29
-67                <action android:name="android.intent.action.MAIN" />
-67-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:52:17-69
-67-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:52:25-66
-68
-69                <category android:name="android.intent.category.LAUNCHER" />
-69-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:54:17-77
-69-->/Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:54:27-74
-70            </intent-filter>
-71        </activity>
-72
-73        <provider
-73-->[androidx.emoji2:emoji2:1.2.0] /Users/ditrick/.gradle/caches/transforms-3/b434d91b7a35e8b4d5f601b6c183fa42/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-74            android:name="androidx.startup.InitializationProvider"
-74-->[androidx.emoji2:emoji2:1.2.0] /Users/ditrick/.gradle/caches/transforms-3/b434d91b7a35e8b4d5f601b6c183fa42/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-75            android:authorities="com.example.focus.androidx-startup"
-75-->[androidx.emoji2:emoji2:1.2.0] /Users/ditrick/.gradle/caches/transforms-3/b434d91b7a35e8b4d5f601b6c183fa42/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-76            android:exported="false" >
-76-->[androidx.emoji2:emoji2:1.2.0] /Users/ditrick/.gradle/caches/transforms-3/b434d91b7a35e8b4d5f601b6c183fa42/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-77            <meta-data
-77-->[androidx.emoji2:emoji2:1.2.0] /Users/ditrick/.gradle/caches/transforms-3/b434d91b7a35e8b4d5f601b6c183fa42/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-78                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-78-->[androidx.emoji2:emoji2:1.2.0] /Users/ditrick/.gradle/caches/transforms-3/b434d91b7a35e8b4d5f601b6c183fa42/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-79                android:value="androidx.startup" />
-79-->[androidx.emoji2:emoji2:1.2.0] /Users/ditrick/.gradle/caches/transforms-3/b434d91b7a35e8b4d5f601b6c183fa42/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-80            <meta-data
-80-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/ditrick/.gradle/caches/transforms-3/83cc24653f5354aacca69a7d06bc67e4/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
-81                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-81-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/ditrick/.gradle/caches/transforms-3/83cc24653f5354aacca69a7d06bc67e4/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
-82                android:value="androidx.startup" />
-82-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/ditrick/.gradle/caches/transforms-3/83cc24653f5354aacca69a7d06bc67e4/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
-83            <meta-data
-83-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-84                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-84-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-85                android:value="androidx.startup" />
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-86        </provider>
-87
-88        <receiver
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-89            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-89-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-90            android:directBootAware="false"
-90-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-91            android:enabled="true"
-91-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-92            android:exported="true"
-92-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-93            android:permission="android.permission.DUMP" >
-93-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-94            <intent-filter>
-94-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-95                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-95-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-95-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-96            </intent-filter>
-97            <intent-filter>
-97-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-98                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-98-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-98-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-99            </intent-filter>
-100            <intent-filter>
-100-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-101                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-101-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-101-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
-102            </intent-filter>
-103            <intent-filter>
-103-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-104                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-104-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-104-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/ditrick/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-105            </intent-filter>
-106        </receiver>
-107    </application>
-108
-109</manifest>
+15        <!-- packages for google pixel -->
+16        <package android:name="com.example.store" />
+16-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:9:9-53
+16-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:9:18-50
+17        <package android:name="com.example.services" />
+17-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:10:9-56
+17-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:10:18-53
+18        <package android:name="android.permission.QUERY_ALL_PACKAGES" />
+18-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:11:9-73
+18-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:11:18-70
+19        <package android:name="com.lenovo.lsf.user" />
+19-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:12:9-55
+19-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:12:18-52
+20        <package android:name="com.facebook.system" />
+20-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:13:9-55
+20-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:13:18-52
+21        <package android:name="com.google.ar.core" />
+21-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:14:9-54
+21-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:14:18-51
+22
+23        <intent>
+23-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:15:9-17:18
+24            <action android:name="android.intent.action.MAIN" />
+24-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:16:13-65
+24-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:16:21-62
+25        </intent>
+26
+27        <!-- packages for motorola -->
+28        <!-- <package android:name="com.google.android.rkpdapp" /> -->
+29        <!-- <package android:name="com.google.android.configupdater" /> -->
+30        <!-- <package android:name="com.android.htmlviewer" /> -->
+31        <!-- <package android:name="com.android.cts.priv.ctsshim" /> -->
+32        <!-- <package android:name="com.motorola.timeweatherwidget" /> -->
+33        <!-- <package android:name="com.google.android.as" /> -->
+34        <!-- <package android:name="com.example.android.app" /> -->
+35        <!-- <package android:name="com.google.android.captiveportallogin" /> -->
+36        <!-- <package android:name="com.google.android.webview"/> -->
+37        <!-- <package android:name="com.motorola.contacts.preloadcontacts" /> -->
+38        <!-- <package android:name="com.example.motorola" /> -->
+39        <!-- <package android:name="com.motorola.slpc_sys" /> -->
+40        <!-- <package android:name="com.motorola.systemserver" /> -->
+41        <!-- <package android:name="com.android.cts.priv.ctsshim" /> -->
+42        <!-- <package android:name="com.google.android.hotspot2.osulogin" /> -->
+43        <!-- <package android:name="com.motorola.screenshoteditor" /> -->
+44        <!-- <package android:name="com.motorola.imagertuning_V2" /> -->
+45        <!-- <package android:name="com.android.settings.intelligence" /> -->
+46        <!-- <package android:name="com.android.printspooler" /> -->
+47
+48
+49        <!-- <package android:name="com.google.android.apps.youtube.music.setupwizard" /> -->
+50        <!-- <package android:name="com.android.cts.priv.ctsshim" /> -->
+51        <!-- <package android:name="com.android.bips" /> -->
+52        <!-- <package android:name="com.motorola.comcast.settings.extensions" /> -->
+53        <!-- <package android:name="com.google.android.syncadapters.contacts" /> -->
+54
+55    </queries>
+56
+57    <permission
+57-->[androidx.core:core:1.9.0] /Users/thandotsela/.gradle/caches/transforms-3/1c981cacaf211a05fae97b7272486038/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+58        android:name="com.example.focus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+58-->[androidx.core:core:1.9.0] /Users/thandotsela/.gradle/caches/transforms-3/1c981cacaf211a05fae97b7272486038/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+59        android:protectionLevel="signature" />
+59-->[androidx.core:core:1.9.0] /Users/thandotsela/.gradle/caches/transforms-3/1c981cacaf211a05fae97b7272486038/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+60
+61    <uses-permission android:name="com.example.focus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+61-->[androidx.core:core:1.9.0] /Users/thandotsela/.gradle/caches/transforms-3/1c981cacaf211a05fae97b7272486038/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+61-->[androidx.core:core:1.9.0] /Users/thandotsela/.gradle/caches/transforms-3/1c981cacaf211a05fae97b7272486038/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+62
+63    <application
+63-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:50:5-102:19
+64        android:allowBackup="true"
+64-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:51:9-35
+65        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+65-->[androidx.core:core:1.9.0] /Users/thandotsela/.gradle/caches/transforms-3/1c981cacaf211a05fae97b7272486038/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+66        android:dataExtractionRules="@xml/data_extraction_rules"
+66-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:52:9-65
+67        android:debuggable="true"
+68        android:extractNativeLibs="false"
+69        android:fullBackupContent="@xml/backup_rules"
+69-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:53:9-54
+70        android:icon="@mipmap/ic_launcher"
+70-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:54:9-43
+71        android:label="@string/app_name"
+71-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:55:9-41
+72        android:roundIcon="@mipmap/ic_launcher_round"
+72-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:56:9-54
+73        android:supportsRtl="true"
+73-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:57:9-35
+74        android:testOnly="true"
+75        android:theme="@style/Theme.Focus" >
+75-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:58:9-43
+76        <activity
+76-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:60:9-62:40
+77            android:name="com.example.focus.scheduleActivity"
+77-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:61:13-45
+78            android:exported="false" />
+78-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:62:13-37
+79        <activity
+79-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:63:9-65:40
+80            android:name="com.example.focus.AccountInfoActivity"
+80-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:64:13-48
+81            android:exported="false" />
+81-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:65:13-37
+82        <activity
+82-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:66:9-68:40
+83            android:name="com.example.focus.SettingsActivity"
+83-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:67:13-45
+84            android:exported="false" />
+84-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:68:13-37
+85        <activity
+85-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:69:9-71:40
+86            android:name="com.example.focus.RoutinesActivity"
+86-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:70:13-45
+87            android:exported="false" />
+87-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:71:13-37
+88        <activity
+88-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:72:9-74:40
+89            android:name="com.example.focus.ProfileActivity"
+89-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:73:13-44
+90            android:exported="false" />
+90-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:74:13-37
+91        <activity
+91-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:75:9-77:40
+92            android:name="com.example.focus.HomeActivity"
+92-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:76:13-41
+93            android:exported="false" />
+93-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:77:13-37
+94        <activity
+94-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:78:9-80:40
+95            android:name="com.example.focus.HomePageActivity"
+95-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:79:13-45
+96            android:exported="false" />
+96-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:80:13-37
+97        <activity
+97-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:81:9-83:40
+98            android:name="com.example.focus.SignupActivity"
+98-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:82:13-43
+99            android:exported="false" />
+99-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:83:13-37
+100        <activity
+100-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:84:9-86:40
+101            android:name="com.example.focus.LoginActivity"
+101-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:85:13-42
+102            android:exported="false" />
+102-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:86:13-37
+103        <activity
+103-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:87:9-89:40
+104            android:name="com.example.focus.SignIn"
+104-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:88:13-35
+105            android:exported="false" />
+105-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:89:13-37
+106        <activity
+106-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:90:9-92:40
+107            android:name="com.example.focus.signup"
+107-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:91:13-35
+108            android:exported="false" />
+108-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:92:13-37
+109        <activity
+109-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:93:9-101:20
+110            android:name="com.example.focus.MainActivity"
+110-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:94:13-41
+111            android:exported="true" >
+111-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:95:13-36
+112            <intent-filter>
+112-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:96:13-100:29
+113                <action android:name="android.intent.action.MAIN" />
+113-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:16:13-65
+113-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:16:21-62
+114
+115                <category android:name="android.intent.category.LAUNCHER" />
+115-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:99:17-77
+115-->/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/src/main/AndroidManifest.xml:99:27-74
+116            </intent-filter>
+117        </activity>
+118
+119        <provider
+119-->[androidx.emoji2:emoji2:1.2.0] /Users/thandotsela/.gradle/caches/transforms-3/b434d91b7a35e8b4d5f601b6c183fa42/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+120            android:name="androidx.startup.InitializationProvider"
+120-->[androidx.emoji2:emoji2:1.2.0] /Users/thandotsela/.gradle/caches/transforms-3/b434d91b7a35e8b4d5f601b6c183fa42/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+121            android:authorities="com.example.focus.androidx-startup"
+121-->[androidx.emoji2:emoji2:1.2.0] /Users/thandotsela/.gradle/caches/transforms-3/b434d91b7a35e8b4d5f601b6c183fa42/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+122            android:exported="false" >
+122-->[androidx.emoji2:emoji2:1.2.0] /Users/thandotsela/.gradle/caches/transforms-3/b434d91b7a35e8b4d5f601b6c183fa42/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+123            <meta-data
+123-->[androidx.emoji2:emoji2:1.2.0] /Users/thandotsela/.gradle/caches/transforms-3/b434d91b7a35e8b4d5f601b6c183fa42/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+124                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+124-->[androidx.emoji2:emoji2:1.2.0] /Users/thandotsela/.gradle/caches/transforms-3/b434d91b7a35e8b4d5f601b6c183fa42/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+125                android:value="androidx.startup" />
+125-->[androidx.emoji2:emoji2:1.2.0] /Users/thandotsela/.gradle/caches/transforms-3/b434d91b7a35e8b4d5f601b6c183fa42/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+126            <meta-data
+126-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/thandotsela/.gradle/caches/transforms-3/83cc24653f5354aacca69a7d06bc67e4/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+127                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+127-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/thandotsela/.gradle/caches/transforms-3/83cc24653f5354aacca69a7d06bc67e4/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+128                android:value="androidx.startup" />
+128-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/thandotsela/.gradle/caches/transforms-3/83cc24653f5354aacca69a7d06bc67e4/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+129            <meta-data
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+130                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+130-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+131                android:value="androidx.startup" />
+131-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+132        </provider>
+133
+134        <receiver
+134-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+135            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+136            android:directBootAware="false"
+136-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+137            android:enabled="true"
+137-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+138            android:exported="true"
+138-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+139            android:permission="android.permission.DUMP" >
+139-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+140            <intent-filter>
+140-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+141                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+142            </intent-filter>
+143            <intent-filter>
+143-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+144                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+144-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+144-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+145            </intent-filter>
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+147                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+147-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+147-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+148            </intent-filter>
+149            <intent-filter>
+149-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+150                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/thandotsela/.gradle/caches/transforms-3/d3c1646fc36935bb7693598fad3032e7/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+151            </intent-filter>
+152        </receiver>
+153    </application>
+154
+155</manifest>

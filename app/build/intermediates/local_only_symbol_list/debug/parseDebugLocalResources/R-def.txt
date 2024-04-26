@@ -11,7 +11,9 @@ drawable refresh
 drawable routine
 drawable settings
 drawable signout
+id appIcon
 id appListLayout
+id appTime
 id bottom_navigation
 id btnAddSchedule
 id btnSetSchedule
@@ -35,12 +37,11 @@ id main
 id navHome
 id navProfile
 id navRoutines
-id notificationsTotal
 id recyclerView
 id refreshButton
+id rvProgram
 id scheduleContainer
 id scheduleText
-id screenTimeTotal
 id signInButton
 id signInUserName
 id textViewCurrentPassword
@@ -52,6 +53,7 @@ id toggleSunday
 id toggleThursday
 id toggleTuesday
 id toggleWednesday
+id totalUsageTime
 id txtAccountInfoLabel
 id txtAge
 id txtEndTime
@@ -69,6 +71,8 @@ layout activity_routines
 layout activity_schedule
 layout activity_settings
 layout activity_signup
+layout app_usage
+layout calender_view
 layout item_schedule
 menu bottom_navigation_menu
 mipmap ic_launcher

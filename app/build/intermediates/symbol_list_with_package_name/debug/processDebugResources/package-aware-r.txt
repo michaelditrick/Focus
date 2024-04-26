@@ -3130,7 +3130,6 @@ id antiClockwise
 id anticipate
 id appIcon
 id appListLayout
-id appName
 id appTime
 id arc
 id asConfigured
