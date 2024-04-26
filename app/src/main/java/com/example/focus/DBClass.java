@@ -112,6 +112,36 @@ public class DBClass extends SQLiteOpenHelper { //SQLiteOpenHelper is an in-buil
         }
         return name;
     }
+
+    public Integer getAge(String username){
+        String query="SELECT age FROM "+TABLE_NAME+" WHERE username = '"+username+"'";
+        SQLiteDatabase db = this.getReadableDatabase();   //selection is a read command.
+
+        //Cursor provides random read-write access to the result set returned by a database query.
+        Cursor extract=db.rawQuery(query,null);  //rawQuery is used to build SQL query. Used only for read queries.
+        extract.moveToFirst();  //move cursor to the last record.
+
+        Integer age1 = 0;
+        if (extract != null) {
+            age1 = extract.getInt(0);
+        }
+        return age1;
+    }
+
+    public String getGender(String username){
+        String query="SELECT gender FROM "+TABLE_NAME+" WHERE username = '"+username+"'";
+        SQLiteDatabase db = this.getReadableDatabase();   //selection is a read command.
+
+        //Cursor provides random read-write access to the result set returned by a database query.
+        Cursor extract=db.rawQuery(query,null);  //rawQuery is used to build SQL query. Used only for read queries.
+        extract.moveToFirst();  //move cursor to the last record.
+
+        String gender1 = "";
+        if (extract != null) {
+            gender1 = extract.getString(0);
+        }
+        return gender1;
+    }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // this method is called to check if the table exists already.
