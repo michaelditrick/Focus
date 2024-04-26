@@ -2,6 +2,51 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+
+    <queries>
+        <!--packages for google pixel-->
+        <package android:name="com.example.store" />
+        <package android:name="com.example.services" />
+        <package android:name="android.permission.QUERY_ALL_PACKAGES" />
+        <package android:name="com.lenovo.lsf.user" />
+        <package android:name="com.facebook.system" />
+        <package android:name="com.google.ar.core" />
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+        </intent>
+
+
+        <!--packages for motorola-->
+        <!--        <package android:name="com.google.android.rkpdapp" />-->
+        <!--        <package android:name="com.google.android.configupdater" />-->
+        <!--        <package android:name="com.android.htmlviewer" />-->
+        <!--        <package android:name="com.android.cts.priv.ctsshim" />-->
+        <!--        <package android:name="com.motorola.timeweatherwidget" />-->
+        <!--        <package android:name="com.google.android.as" />-->
+        <!--        <package android:name="com.example.android.app" />-->
+        <!--        <package android:name="com.google.android.captiveportallogin" />-->
+        <!--        <package android:name="com.google.android.webview"/>-->
+        <!--        <package android:name="com.motorola.contacts.preloadcontacts" />-->
+        <!--        <package android:name="com.example.motorola" />-->
+        <!--        <package android:name="com.motorola.slpc_sys" />-->
+        <!--        <package android:name="com.motorola.systemserver" />-->
+        <!--        <package android:name="com.android.cts.priv.ctsshim" />-->
+        <!--        <package android:name="com.google.android.hotspot2.osulogin" />-->
+        <!--        <package android:name="com.motorola.screenshoteditor" />-->
+        <!--        <package android:name="com.motorola.imagertuning_V2" />-->
+        <!--        <package android:name="com.android.settings.intelligence" />-->
+        <!--        <package android:name="com.android.printspooler" />-->
+
+        <!--        <package android:name="com.google.android.apps.youtube.music.setupwizard" />-->
+        <!--        <package android:name="com.android.cts.priv.ctsshim" />-->
+        <!--        <package android:name="com.android.bips" />-->
+        <!--        <package android:name="com.motorola.comcast.settings.extensions" />-->
+        <!--        <package android:name="com.google.android.syncadapters.contacts" />-->
+
+
+    </queries>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"

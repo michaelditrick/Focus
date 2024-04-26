@@ -3128,7 +3128,10 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id appIcon
 id appListLayout
+id appName
+id appTime
 id arc
 id asConfigured
 id async
@@ -3388,7 +3391,6 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
-id notificationsTotal
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -3439,6 +3441,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvProgram
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3446,7 +3449,6 @@ id scale
 id scheduleContainer
 id scheduleText
 id screen
-id screenTimeTotal
 id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -3551,6 +3553,7 @@ id toggleTuesday
 id toggleWednesday
 id top
 id topPanel
+id totalUsageTime
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -3714,6 +3717,8 @@ layout activity_routines
 layout activity_schedule
 layout activity_settings
 layout activity_signup
+layout app_usage
+layout calender_view
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
