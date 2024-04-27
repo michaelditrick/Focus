@@ -1,6 +1,5 @@
 package com.example.focus;
 
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,23 +28,36 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.Schedu
 
     @Override
     public void onBindViewHolder(@NonNull ScheduleViewHolder holder, int position) {
-        String schedule = schedules.get(position);
-        holder.scheduleText.setText(schedule);
+        String scheduleString = schedules.get(position);
+        holder.scheduleText.setText(formatScheduleDisplay(scheduleString));
 
         holder.deleteButton.setOnClickListener(view -> {
-            listener.onDeleteSchedule(position, schedule);
+            listener.onDeleteSchedule(position, scheduleString);
         });
     }
 
     @Override
     public int getItemCount() {
-        if (schedules != null) {
-            return schedules.size();
-        } else {
-            return 0; // or return a default value
-        }
+        return schedules.size();
     }
 
+    private String formatScheduleDisplay(String scheduleString) {
+        String[] parts = scheduleString.split(",");
+        String timeRange = parts[0];
+        StringBuilder daysBuilder = new StringBuilder(" on ");
+        String[] dayLabels = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
+
+        for (int i = 1; i < parts.length; i++) {
+            if ("1".equals(parts[i])) {
+                if (daysBuilder.length() > 4) { // Add comma if not the first day
+                    daysBuilder.append(", ");
+                }
+                daysBuilder.append(dayLabels[i - 1]);
+            }
+        }
+
+        return timeRange + daysBuilder.toString();
+    }
 
     public interface ScheduleAdapterListener {
         void onDeleteSchedule(int position, String schedule);

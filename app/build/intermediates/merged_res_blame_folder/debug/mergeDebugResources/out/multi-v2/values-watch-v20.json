@@ -4,7 +4,7 @@
             "outputFile": "com.example.focus.app-mergeDebugResources-29:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "/Users/thandotsela/.gradle/caches/transforms-3/59e2eca23194645b17aa8fe30ed14f57/transformed/appcompat-1.6.1/res/values-watch-v20/values-watch-v20.xml",
+                    "source": "/Users/ditrick/.gradle/caches/transforms-3/59e2eca23194645b17aa8fe30ed14f57/transformed/appcompat-1.6.1/res/values-watch-v20/values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

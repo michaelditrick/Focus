@@ -3566,6 +3566,7 @@ id txtAccountInfoLabel
 id txtAge
 id txtEndTime
 id txtGender
+id txtMySchedules
 id txtName
 id txtStartTime
 id txtUsername
