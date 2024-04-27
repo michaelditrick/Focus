@@ -1,7 +1,7 @@
-#Thu Apr 25 21:41:19 EDT 2024
-base.0=/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/thandotsela/Documents/Richmond Stuff/Spring 2024/Android Programming/Focus/app/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex
+#Sat Apr 27 18:51:57 EDT 2024
+base.0=/Users/ditrick/AndroidStudioProjects/Focus/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/ditrick/AndroidStudioProjects/Focus/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/Users/ditrick/AndroidStudioProjects/Focus/app/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=8/classes.dex

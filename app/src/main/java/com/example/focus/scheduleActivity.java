@@ -4,8 +4,6 @@ import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -15,68 +13,62 @@ import java.util.Calendar;
 
 public class scheduleActivity extends AppCompatActivity {
 
-    private int startHour, startMinute, endHour, endMinute;
-    private final boolean[] weekDays = new boolean[7]; // Sun, Mon, Tue, Wed, Thu, Fri, Sat
     private TextView txtStartTime, txtEndTime;
-    private SharedPreferences sharedPreferences;
+    private int startHour, startMinute, endHour, endMinute;
+    private boolean[] weekDays = new boolean[7]; // Array to store day selections
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule);
 
-        sharedPreferences = getSharedPreferences("MySchedules", MODE_PRIVATE);
-
+        // Initialize TextViews for time display
         txtStartTime = findViewById(R.id.txtStartTime);
         txtEndTime = findViewById(R.id.txtEndTime);
+        initializeTimePickers();
+
+        // Initialize day toggle buttons
+        setupDayToggles();
+
+        // Set button to finalize the schedule
+        Button btnSetSchedule = findViewById(R.id.btnSetSchedule);
+        btnSetSchedule.setOnClickListener(v -> saveSchedule());
+    }
+
+    private void initializeTimePickers() {
+        Calendar calendar = Calendar.getInstance();
+        startHour = endHour = calendar.get(Calendar.HOUR_OF_DAY);
+        startMinute = endMinute = calendar.get(Calendar.MINUTE);
 
         txtStartTime.setOnClickListener(v -> showTimePicker(true));
         txtEndTime.setOnClickListener(v -> showTimePicker(false));
-
-        setupDayToggle((ToggleButton) findViewById(R.id.toggleSunday), 0);
-        setupDayToggle((ToggleButton) findViewById(R.id.toggleMonday), 1);
-        setupDayToggle((ToggleButton) findViewById(R.id.toggleTuesday), 2);
-        setupDayToggle((ToggleButton) findViewById(R.id.toggleWednesday), 3);
-        setupDayToggle((ToggleButton) findViewById(R.id.toggleThursday), 4);
-        setupDayToggle((ToggleButton) findViewById(R.id.toggleFriday), 5);
-        setupDayToggle((ToggleButton) findViewById(R.id.toggleSaturday), 6);
-
-        // Repeat this for the other days...
-
-        Button btnSetSchedule = findViewById(R.id.btnSetSchedule);
-        btnSetSchedule.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                saveSchedule();
-                Log.d("===save-weeks===", "Alarm On with interval:" + weekDays[0]);
-                Intent intent = new Intent(scheduleActivity.this, RoutinesActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
-
-
     }
 
     private void showTimePicker(boolean isStartTime) {
         int hour = isStartTime ? startHour : endHour;
         int minute = isStartTime ? startMinute : endMinute;
 
-        TimePickerDialog timePickerDialog = new TimePickerDialog(this,
-                (TimePicker view, int selectedHour, int selectedMinute) -> {
-                    if (isStartTime) {
-                        startHour = selectedHour;
-                        startMinute = selectedMinute;
-                        txtStartTime.setText(String.format("%02d:%02d", startHour, startMinute));
-                    } else {
-                        endHour = selectedHour;
-                        endMinute = selectedMinute;
-                        txtEndTime.setText(String.format("%02d:%02d", endHour, endMinute));
-                    }
-                }, hour, minute, false);
+        new TimePickerDialog(this, (view, hourOfDay, minuteOfHour) -> {
+            if (isStartTime) {
+                startHour = hourOfDay;
+                startMinute = minuteOfHour;
+                txtStartTime.setText(String.format("%02d:%02d", startHour, startMinute));
+            } else {
+                endHour = hourOfDay;
+                endMinute = minuteOfHour;
+                txtEndTime.setText(String.format("%02d:%02d", endHour, endMinute));
+            }
+        }, hour, minute, true).show();
+    }
 
-        timePickerDialog.show();
+    private void setupDayToggles() {
+        int[] toggleButtonsIDs = new int[]{R.id.toggleSunday, R.id.toggleMonday, R.id.toggleTuesday,
+                R.id.toggleWednesday, R.id.toggleThursday, R.id.toggleFriday,
+                R.id.toggleSaturday};
+        for (int i = 0; i < toggleButtonsIDs.length; i++) {
+            ToggleButton toggleButton = findViewById(toggleButtonsIDs[i]);
+            setupDayToggle(toggleButton, i);
+        }
     }
 
     private void setupDayToggle(ToggleButton toggleButton, int dayIndex) {
@@ -84,18 +76,23 @@ public class scheduleActivity extends AppCompatActivity {
     }
 
     private void saveSchedule() {
-        // Save the schedule details to SharedPreferences
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putInt("startHour", startHour);
-        editor.putInt("startMinute", startMinute);
-        editor.putInt("endHour", endHour);
-        editor.putInt("endMinute", endMinute);
-        for (int i = 0; i < weekDays.length; i++) {
-            editor.putBoolean("day_" + i, weekDays[i]);
+        StringBuilder scheduleBuilder = new StringBuilder();
+        scheduleBuilder.append(String.format("%02d:%02d - %02d:%02d", startHour, startMinute, endHour, endMinute));
+        for (boolean day : weekDays) {
+            scheduleBuilder.append(",").append(day ? "1" : "0");
         }
+
+        SharedPreferences sharedPreferences = getSharedPreferences("MySchedules", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        int scheduleCount = sharedPreferences.getInt("schedule_count", 0);
+        editor.putString("schedule_" + scheduleCount, scheduleBuilder.toString());
+        editor.putInt("schedule_count", scheduleCount + 1);
         editor.apply();
 
-
-
+        setResult(RESULT_OK);
+        // Navigate back to the Sign In Activity
+        Intent scheduleIntent = new Intent(scheduleActivity.this, RoutinesActivity.class);
+        startActivity(scheduleIntent);
+        ///finish();
     }
 }
