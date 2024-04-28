@@ -18,8 +18,7 @@ public class ProgramAdapter extends RecyclerView.Adapter<ProgramAdapter.ViewHold
     private List<Drawable> appIcons;
     private List<String> appNames;
     private List<String> appUsageTime;
-//    private String[] appUsageTime;
-//    private int[] appIcons;
+
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
         //TextView appName;
@@ -33,8 +32,7 @@ public class ProgramAdapter extends RecyclerView.Adapter<ProgramAdapter.ViewHold
         }
     }
 
-    // provide suitable constructor for program adapter
-    //public ProgramAdapter(Context context, List<String> programAppNames, List<String> programAppTimes, List<Drawable> images){
+
     public ProgramAdapter(Context context, List<String> programAppTimes, List<Drawable> images){
         this.context = context;
         //this.appNames = programAppNames;
@@ -56,9 +54,7 @@ public class ProgramAdapter extends RecyclerView.Adapter<ProgramAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ProgramAdapter.ViewHolder holder, int position) {
-        // Replace contents of a view to be invoked by the layout manager
-        // Get element from your dataset at this position and replace contents of the view with with that element
-        //holder.appName.setText(appNames.get(position));
+
         holder.appTime.setText(appUsageTime.get(position));
         holder.rowImage.setImageDrawable(appIcons.get(position));
     }

@@ -43,7 +43,7 @@ public class ProfileActivity extends AppCompatActivity {
         ImageView imgSignOut = findViewById(R.id.imgSignOut);
         // Initialize the RadioGroup and Spinner
         moodRadioGroup = findViewById(R.id.moodRadioGroup);
-        //musicSpinner = findViewById(R.id.spinnerFavoriteMusic);
+
 
 
         //Get intent that started this activity
@@ -52,17 +52,22 @@ public class ProfileActivity extends AppCompatActivity {
 
         //Declare the database to check username and password
         DBClass db=new DBClass(getApplicationContext(), "Database0");
-//        String name = db.getName(username);
-//        Integer age = db.getAge(username);
-//        String gender = db.getGender(username);
-//
-//        txtName.setText("Name: "+ name);
-//        txtAge.setText("Age: "+ age);
-//        txtUsername.setText("Userame: "+ username);
-//        txtGender.setText("Gender: "+ gender);
+        String name = db.getName(username);
+        Integer age = db.getAge(username);
+        String gender = db.getGender(username);
+
+        txtName.setText("Name: "+ name);
+        txtAge.setText("Age: "+ age);
+        txtUsername.setText("Userame: "+ username);
+        txtGender.setText("Gender: "+ gender);
 
         // Set up the settings icon click listener
-        imgSettings.setOnClickListener(view -> startActivity(new Intent(this, SettingsActivity.class)));
+        imgSettings.setOnClickListener(view -> {
+            Intent intent = new Intent(this, SettingsActivity.class);
+            intent.putExtra("thisUserName", username);
+            startActivity(intent);
+        });
+
 
         // Set up the sign out icon click listener
         imgSignOut.setOnClickListener(view -> {
@@ -72,9 +77,6 @@ public class ProfileActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
-
-        // Fetch user data
-        fetchUserData();
 
 
         moodRadioGroup = findViewById(R.id.moodRadioGroup);
@@ -155,16 +157,7 @@ public class ProfileActivity extends AppCompatActivity {
         });
     }
 
-    private void fetchUserData() {
-        databaseExecutor.execute(() -> {
-            //sample fetching:
-            // lets try to fetch from a different thread : Thando
 
-            runOnUiThread(() -> {
-
-            });
-        });
-    }
 
     @Override
     protected void onDestroy() {

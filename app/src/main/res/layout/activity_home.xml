@@ -38,11 +38,7 @@
         android:layout_below="@id/welcomeText"
         android:layout_above="@id/bottom_navigation">
 
-<!--        <Spinner-->
-<!--            android:id="@+id/spinner"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@id/welcomeText"/>-->
+
 
         <CalendarView
             android:id="@+id/calendarView"
@@ -51,7 +47,7 @@
             android:layout_below="@id/welcomeText"
             android:layout_marginTop="16dp" />
 
-        <!--            android:layout_weight="1"-->
+
 
         <TextView
             android:id="@+id/totalUsageTime"
@@ -79,14 +75,7 @@
 
             </LinearLayout>
 
-<!--        <TextView-->
-<!--            android:id="@+id/notificationsTotal"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1"-->
-<!--            android:text="Total notifications\n42"-->
-<!--            android:gravity="center"-->
-<!--            android:padding="16dp" />-->
+
 
     </LinearLayout>
 </ScrollView>
@@ -97,10 +86,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_navigation_menu" />
-
-
-
-
 
 
 </RelativeLayout>

@@ -45,12 +45,11 @@ public class HomeActivity extends AppCompatActivity {
     private TextView welcomeText;
     private Button refreshButton;
     private CalendarView calendarView;
-    private View histogramView;
+
     private TextView screenTimeText;
     private TextView notificationText;
     private BottomNavigationView bottomNavigationView;
 
-    //Thando's variables
     private TextView txtName;
     private Calendar cal;
     private Calendar userCalender;
@@ -63,7 +62,7 @@ public class HomeActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager layoutManager;
     private long currentTime;
     private long midnight;
-    private Spinner spinner;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,12 +73,7 @@ public class HomeActivity extends AppCompatActivity {
         welcomeText = findViewById(R.id.welcomeText);
         refreshButton = findViewById(R.id.refreshButton);
         calendarView = findViewById(R.id.calendarView);
-//        View calendarViewLayout = (LinearLayout) View.inflate(this, R.layout.calender_view, null);
-//        calendarView = calendarViewLayout.findViewById(R.id.calendarView);
-//        spinner = findViewById(R.id.spinner);
-//
-//        CalendarAdapter adapter = new CalendarAdapter(this);
-//        spinner.setAdapter(adapter);
+
 
         //Get intent that started this activity
         Intent intent = getIntent();
@@ -87,19 +81,17 @@ public class HomeActivity extends AppCompatActivity {
 
         //Declare the database to check username and password
         DBClass db=new DBClass(getApplicationContext(), "Database0");
-        //String name = db.getName(username);
+        String name = db.getName(username);
 
-        //welcomeText.setText("Welcome, "+ name);
+        welcomeText.setText("Welcome, "+ name);
 
         userCalender = Calendar.getInstance();
          //Set up the calendar view
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(CalendarView view, int year, int month, int dayOfMonth) {
-                // Handle the day change, update the histogram and other views
-                //if (dayOfMonth < cal.get(Calendar.DAY_OF_MONTH) && year < cal.get(Calendar.YEAR) && month < cal.get(Calendar.MONTH) ) { // valid
 
-                //userCalender.set(year, month+1, dayOfMonth);     // updating date in calendar
+                // Handle the day change, update the histogram and other views
                 userCalender.set(Calendar.DAY_OF_MONTH, dayOfMonth);
                 userCalender.set(Calendar.MONTH, month);
                 userCalender.set(Calendar.YEAR, year);
@@ -168,7 +160,7 @@ public class HomeActivity extends AppCompatActivity {
             return false;
         });
 
-        // TODO: Implement data loading and update methods
+
         // Initialize...
         screenTimeText = findViewById(R.id.totalUsageTime);
         recyclerView = findViewById(R.id.rvProgram);
@@ -185,15 +177,15 @@ public class HomeActivity extends AppCompatActivity {
         midnight = cal.getTimeInMillis(); // this is midnight (start of the day)
 
         // Request permission to access usage stats if not granted already
-//        if (!hasUsageAccessPermission()) {
-//        requestUsageAccessPermission();
-//        } else {
-//            try {
-//                displayTotalUsageTime(midnight, currentTime);
-//            } catch (PackageManager.NameNotFoundException e) {
-//                throw new RuntimeException(e);
-//            }
-//        }
+        if (!hasUsageAccessPermission()) {
+        requestUsageAccessPermission();
+        } else {
+            try {
+                displayTotalUsageTime(midnight, currentTime);
+            } catch (PackageManager.NameNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+        }
 
         // Display Apps data and total usage time data
         try {
@@ -203,7 +195,7 @@ public class HomeActivity extends AppCompatActivity {
         }
     }
 
-    // TODO: Add methods for data handling and UI updates
+
     private boolean hasUsageAccessPermission() {
         // Check if permission is granted
         UsageStatsManager usageStatsManager = (UsageStatsManager) getSystemService(Context.USAGE_STATS_SERVICE);
@@ -256,7 +248,7 @@ public class HomeActivity extends AppCompatActivity {
 
     public long getTotalUsageTime(long startTime, long endTime) {
         UsageStatsManager usageStatsManager = (UsageStatsManager) getSystemService(Context.USAGE_STATS_SERVICE);
-        //long currentTime = System.currentTimeMillis();
+
         Log.d("===endTime===", "End time in minutes " + (endTime/ (1000 * 60)) % 60);
 
         Log.d("===Midnight===", "Midnight time in minutes " + (startTime/ (1000 * 60)) % 60);
@@ -297,7 +289,7 @@ public class HomeActivity extends AppCompatActivity {
         recyclerView.setAdapter(programAdapter);
     }
 
-    // List<List<Drawable>, List<String>, List<String>>
+
     public List<List> getAppUsageTime() throws PackageManager.NameNotFoundException {
         Map<String, Pair> appUsageTime = new HashMap<>();
         PackageManager packageManager = getPackageManager();
@@ -363,14 +355,12 @@ public class HomeActivity extends AppCompatActivity {
         return appIcons;
     }
     public boolean isUserLaunchedApp(String packageName) {
-        // You can add your own logic here to determine if an app is user-launched or not
-        // For example, you could check if the app has a launcher activity, or use a list of known system/background apps
-        // Here's a simple example that excludes apps with the package name starting with "com.google.android"
+
 
         return (!packageName.startsWith("com.google.android") && !packageName.startsWith("com.android") && !packageName.startsWith("com.motorola"));
     }
 
-    // This is a background event that checks if the time is 11:59 every minute.
+
     private void scheduleBackgroundService() {
         Intent intent = new Intent(this, AppUsageBackgroundService.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);

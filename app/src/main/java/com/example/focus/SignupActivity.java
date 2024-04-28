@@ -66,41 +66,27 @@ public class SignupActivity extends AppCompatActivity {
                     return;
                 }
 
-                /*
-                TODO: Thando
-                //DBClass db=new DBClass(getApplicationContext(), "Database0");
+
+                DBClass db=new DBClass(getApplicationContext(), "Database0");
                 //check if the selected username already exists
 
                 if (db.checkUsername(editTextUsername.getText().toString())) {
                     Toast.makeText(SignupActivity.this, "The selected username is taken. Try another one!", Toast.LENGTH_SHORT).show();
-                    return;
+                    return;}
 
                 else {
                     //get hashed password
-                    //String passwordHash = PasswordUtils.hashPassword(editTextPassword.getText().toString());
+                    String passwordHash = PasswordUtils.hashPassword(editTextPassword.getText().toString());
 
                     //Save the data in the database
-                    //db.addInfo(editTextName.getText().toString(), editTextAge.getText().toString(), editTextGender.getText().toString(), editTextUsername.getText().toString(),passwordHash);
+                    db.addInfo(editTextName.getText().toString(), editTextAge.getText().toString(), editTextGender.getText().toString(), editTextUsername.getText().toString(),passwordHash);
 
-                    // Navigate back to the Sign In Activity
+                    // Navigate to the Sign In Activity
                     Intent signInIntent = new Intent(SignupActivity.this, LoginActivity.class);
                     startActivity(signInIntent);
                 }
-                */
 
-                if (false) {
-                    Toast.makeText(SignupActivity.this, "The selected username is xxxx taken. Try another one!", Toast.LENGTH_SHORT).show();
-                }
-                else {
-
-                    // Navigate back to the Sign In Activity
-                    Intent signInIntent = new Intent(SignupActivity.this, LoginActivity.class);
-                    startActivity(signInIntent);
-                }
             }
-
-
-
 
             //check username validity
             private boolean isValidUsername(String username) {

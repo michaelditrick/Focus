@@ -38,18 +38,14 @@ public class DBClass extends SQLiteOpenHelper { //SQLiteOpenHelper is an in-buil
 
         db.execSQL(query);    //execute the SQL query. Cannot be used for SELECT/INSERT/UPDATE/DELETE.
     }
-    /*  public void deletetable(String table_name){
-          SQLiteDatabase db = this.getWritableDatabase();
 
-          db.execSQL("DELETE * FROM "+table_name);
-      }*/
     public void addInfo(String name, String age, String gender, String username, String password)//,  )
     {
 
         //This class is used to store a set of values that the ContentResolver (handles content provided to the app) can process.
         ContentValues values = new ContentValues();
         SQLiteDatabase db = this.getWritableDatabase();  //writing into the database.
-        //values.put(ID_COL,1);    //add column name and values into the ContentValues object.
+
         values.put(NAME_COL, name);
         values.put(AGE_COL, Integer.parseInt(age));
         values.put(GENDER_COL, gender);
@@ -142,9 +138,25 @@ public class DBClass extends SQLiteOpenHelper { //SQLiteOpenHelper is an in-buil
         }
         return gender1;
     }
+
+    public void updatePassword(String username, String newPassword) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(PASSWORD_COL, newPassword);
+
+        // Update the row where the username matches the provided username
+        String whereClause = "username = ?";
+        String[] whereArgs = new String[]{username};
+
+        db.update(TABLE_NAME, values, whereClause, whereArgs);
+        db.close();
+    }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // this method is called to check if the table exists already.
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
 
-    }}
+    }
+}
+
+
