@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:2:1-118:16
-INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:2:1-118:16
-INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:2:1-118:16
-INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:2:1-118:16
+ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:2:1-117:16
+INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:2:1-117:16
+INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:2:1-117:16
+INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:2:1-117:16
 MERGED from [com.google.android.material:material:1.10.0] /Users/ditrick/.gradle/caches/transforms-3/a6b7991a33d313e218cce7e7dd40e192/transformed/material-1.10.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/ditrick/.gradle/caches/transforms-3/4427a87fc164e9e78112bccac44a0f75/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/ditrick/.gradle/caches/transforms-3/e4452e8a6e9eceaf13347753b22a3337/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
@@ -104,8 +104,8 @@ ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManife
 	android:name
 		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:22:21-62
 application
-ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:55:5-113:19
-INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:55:5-113:19
+ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:55:5-115:19
+INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:55:5-115:19
 MERGED from [com.google.android.material:material:1.10.0] /Users/ditrick/.gradle/caches/transforms-3/a6b7991a33d313e218cce7e7dd40e192/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] /Users/ditrick/.gradle/caches/transforms-3/a6b7991a33d313e218cce7e7dd40e192/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/ditrick/.gradle/caches/transforms-3/4427a87fc164e9e78112bccac44a0f75/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -232,6 +232,12 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:108:17-77
 	android:name
 		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:108:27-74
+receiver#com.example.focus.sendNotification
+ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:111:9-113:38
+	android:enabled
+		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:113:13-35
+	android:name
+		ADDED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml:112:13-45
 uses-sdk
 INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/ditrick/AndroidStudioProjects/Focus/app/src/main/AndroidManifest.xml
