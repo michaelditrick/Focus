@@ -21,6 +21,8 @@ id buttonChangePassword
 id buttonCreateAccount
 id buttonSignIn
 id calendarView
+id checkboxNo
+id checkboxYes
 id createAccountButton
 id deleteButton
 id editTextAge
@@ -34,9 +36,13 @@ id imgSettings
 id imgSignOut
 id infoLayout
 id main
+id moodRadioGroup
 id navHome
 id navProfile
 id navRoutines
+id radioGood
+id radioHappy
+id radioSad
 id recyclerView
 id refreshButton
 id rvProgram
@@ -44,7 +50,9 @@ id scheduleContainer
 id scheduleText
 id signInButton
 id signInUserName
+id spinnerFavoriteMusic
 id textViewCurrentPassword
+id textViewSelectMusic
 id textViewUsername
 id toggleFriday
 id toggleMonday
@@ -57,10 +65,13 @@ id totalUsageTime
 id txtAccountInfoLabel
 id txtAge
 id txtEndTime
+id txtEnjoyApp
 id txtGender
+id txtMoodQuestion
 id txtMySchedules
 id txtName
 id txtStartTime
+id txtStatus
 id txtUsername
 id welcomeText
 layout activity_account_info

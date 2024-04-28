@@ -140,11 +140,11 @@
         "source": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-main-33:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.focus.app-debug-31:/layout_activity_profile.xml.flat",
+        "source": "com.example.focus.app-main-33:/layout/activity_profile.xml"
     },
     {
-        "merged": "com.example.focus.app-debug-31:/layout_activity_schedule.xml.flat",
-        "source": "com.example.focus.app-main-33:/layout/activity_schedule.xml"
+        "merged": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/ditrick/.gradle/daemon/8.4/com.example.focus.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
     }
 ]
