@@ -1,10 +1,13 @@
 package com.example.focus;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -31,7 +34,6 @@ public class RoutinesActivity extends AppCompatActivity implements ScheduleAdapt
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new ScheduleAdapter(schedules, this);
         recyclerView.setAdapter(adapter);
-
 
         findViewById(R.id.btnAddSchedule).setOnClickListener(v -> {
             Intent intent = new Intent(this, scheduleActivity.class);
@@ -79,4 +81,5 @@ public class RoutinesActivity extends AppCompatActivity implements ScheduleAdapt
         adapter.notifyDataSetChanged();
         saveSchedules();
     }
+
 }

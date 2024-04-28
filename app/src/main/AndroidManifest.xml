@@ -109,6 +109,13 @@
             </intent-filter>
         </activity>
 
+        <receiver
+            android:name=".sendNotification"
+            android:enabled="true" />
+
+        <service
+            android:name="com.example.focus.Service1" />
+
 
     </application>
 

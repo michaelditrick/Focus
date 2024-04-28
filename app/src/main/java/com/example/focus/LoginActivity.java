@@ -1,8 +1,11 @@
 package com.example.focus;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -59,9 +62,28 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Invalid username or password.", Toast.LENGTH_SHORT).show();
                 }
 
-                Intent homeIntent = new Intent(LoginActivity.this, HomeActivity.class);
+                requestAppPermissions(); //for notifications later on.
+
+                //Intent homeIntent = new Intent(LoginActivity.this, HomeActivity.class);
                 //homeIntent.putExtra("thisUserName", username);
-                startActivity(homeIntent);
+                //startActivity(homeIntent);
             }});
+    }
+
+    private boolean hasWritePermissions() {
+        return (ContextCompat.checkSelfPermission(LoginActivity.this,
+                android.Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED);
+    }
+
+    private void requestAppPermissions() {
+        //  if (hasReadPermissions() && hasWritePermissions()) {
+        if (hasWritePermissions()) {
+
+            return;
+        }
+        ActivityCompat.requestPermissions(LoginActivity.this,
+                new String[] {
+                        android.Manifest.permission.POST_NOTIFICATIONS
+                }, 0);
     }
 }

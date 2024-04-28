@@ -4,7 +4,6 @@ package com.example.focus;
 import android.Manifest;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
-import android.app.usage.UsageEvents;
 import android.app.usage.UsageStats;
 import android.app.usage.UsageStatsManager;
 import android.content.Context;
@@ -19,7 +18,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
-import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -36,7 +34,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import androidx.core.app.ActivityCompat;
-import androidx.core.graphics.Insets;
 import androidx.core.util.Pair;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
@@ -338,7 +335,7 @@ public class HomeActivity extends AppCompatActivity {
             }
             else {formattedTime = String.format("%02dsec", seconds);}
 
-            if (usageTime != null) { //edit this to get time that is greater than 1 minute.
+            if (usageTime != null && seconds > 0) { //edit this to get time that is greater than 1 minute.
                 appsNames.add(packageName);
                 appsTimeList.add(formattedTime);
                 appIcons.add(drawable);
@@ -372,7 +369,7 @@ public class HomeActivity extends AppCompatActivity {
 
     // This is a background event that checks if the time is 11:59 every minute.
     private void scheduleBackgroundService() {
-        Intent intent = new Intent(this, AppUsageBackgroundService.class);
+        Intent intent = new Intent(this, BackgroundService.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
