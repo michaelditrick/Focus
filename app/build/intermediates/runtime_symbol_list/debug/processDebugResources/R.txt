@@ -3169,6 +3169,8 @@ int id chain 0x7f080076
 int id chain2 0x7f080077
 int id chains 0x7f080078
 int id checkbox 0x7f080079
+int id checkboxNo 0x7f080223
+int id checkboxYes 0x7f080224
 int id checked 0x7f08007a
 int id chronometer 0x7f08007b
 int id circle_center 0x7f08007c
@@ -3343,6 +3345,7 @@ int id month_navigation_fragment_toggle 0x7f080124
 int id month_navigation_next 0x7f080125
 int id month_navigation_previous 0x7f080126
 int id month_title 0x7f080127
+int id moodRadioGroup 0x7f080225
 int id motion_base 0x7f080128
 int id mtrl_anchor_parent 0x7f080129
 int id mtrl_calendar_day_selector_frame 0x7f08012a
@@ -3427,6 +3430,9 @@ int id pressed 0x7f080178
 int id progress_circular 0x7f080179
 int id progress_horizontal 0x7f08017a
 int id radio 0x7f08017b
+int id radioGood 0x7f080226
+int id radioHappy 0x7f080227
+int id radioSad 0x7f080228
 int id ratio 0x7f08017c
 int id rectangles 0x7f08017d
 int id recyclerView 0x7f08017e
@@ -3484,6 +3490,7 @@ int id snapMargins 0x7f0801b1
 int id south 0x7f0801b2
 int id spacer 0x7f0801b3
 int id special_effects_controller_view_tag 0x7f0801b4
+int id spinnerFavoriteMusic 0x7f080229
 int id spline 0x7f0801b5
 int id split_action_bar 0x7f0801b6
 int id spread 0x7f0801b7
@@ -3527,6 +3534,7 @@ int id textSpacerNoTitle 0x7f0801dc
 int id textStart 0x7f0801dd
 int id textTop 0x7f0801de
 int id textViewCurrentPassword 0x7f0801df
+int id textViewSelectMusic 0x7f08022a
 int id textViewUsername 0x7f0801e0
 int id text_input_end_icon 0x7f0801e1
 int id text_input_error_icon 0x7f0801e2
@@ -3564,10 +3572,13 @@ int id triangle 0x7f080201
 int id txtAccountInfoLabel 0x7f080202
 int id txtAge 0x7f080203
 int id txtEndTime 0x7f080204
+int id txtEnjoyApp 0x7f08022b
 int id txtGender 0x7f080205
+int id txtMoodQuestion 0x7f08022c
 int id txtMySchedules 0x7f080221
 int id txtName 0x7f080206
 int id txtStartTime 0x7f080207
+int id txtStatus 0x7f08022d
 int id txtUsername 0x7f080208
 int id unchecked 0x7f080209
 int id uniform 0x7f08020a

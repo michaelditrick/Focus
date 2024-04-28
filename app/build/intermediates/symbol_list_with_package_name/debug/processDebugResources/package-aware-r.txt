@@ -3170,6 +3170,8 @@ id chain
 id chain2
 id chains
 id checkbox
+id checkboxNo
+id checkboxYes
 id checked
 id chronometer
 id circle_center
@@ -3344,6 +3346,7 @@ id month_navigation_fragment_toggle
 id month_navigation_next
 id month_navigation_previous
 id month_title
+id moodRadioGroup
 id motion_base
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
@@ -3428,6 +3431,9 @@ id pressed
 id progress_circular
 id progress_horizontal
 id radio
+id radioGood
+id radioHappy
+id radioSad
 id ratio
 id rectangles
 id recyclerView
@@ -3485,6 +3491,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinnerFavoriteMusic
 id spline
 id split_action_bar
 id spread
@@ -3528,6 +3535,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textViewCurrentPassword
+id textViewSelectMusic
 id textViewUsername
 id text_input_end_icon
 id text_input_error_icon
@@ -3565,10 +3573,13 @@ id triangle
 id txtAccountInfoLabel
 id txtAge
 id txtEndTime
+id txtEnjoyApp
 id txtGender
+id txtMoodQuestion
 id txtMySchedules
 id txtName
 id txtStartTime
+id txtStatus
 id txtUsername
 id unchecked
 id uniform
